@@ -4,6 +4,9 @@ Quotes
 ##Author
 Michelle Claire
 
+##project Description
+An application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. whereby a user can create a quote, vote for a quote or Delete a Quote. The application can also show the number of downvoates and upvotes of each Quote.Lastly it shows the time which the Quote was updated and it highlights the quote with the most upvotes.
+
 # Projectquotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.

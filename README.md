@@ -1,5 +1,8 @@
-#project Name
+##project Name
 Quotes
+
+##Author
+Michelle Claire
 
 # Projectquotes
 

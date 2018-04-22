@@ -1,24 +1,24 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
-      <form>
+      <form (ngSubmit)='formSubmit(myForm)' #myForm='ngForm'>
         <div class="form-group">
-          <label for="Author">Author</label>
-          <input class="form-control" type="text" name="Name" required>[(ngModel)]="newGoal.Author" name="Author">
-            <!--Testing  to see if we get data-->
-                Display {{newGoal.Author}}
+          <label for="author">Author</label>
+          <input class="form-control" type="text" name="author" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input class="form-control" type="text" name="name" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="quote">Quote</label>
+          <textarea class="form-control" name="quote" ngModel rows="8" cols="80"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="name">Date added</label>
+          <input class="form-control" type="date" name="date" ngModel required>
+        </div>
 
-        </div>
-        <div class="form-group">
-          <label for="Name">Name</label>
-          <input class="form-control" type="text" name="Name" required>[(ngModel)]="newGoal.Name" name="Name">
-            <!--Testing  to see if we get data-->
-                Display {{newGoal.Name}}
-        </div>
-        <div class="form-group">
-          <label for="Quotes">Quote</label>
-          <textarea class="form-control" name="Quotes" rows="8" cols="80"></textarea>
-        </div>
         <button type="submit" class="btn btn-secondary">Add Quote</button>
       </form>
     </div>
@@ -26,4 +26,6 @@
 
     </div>
   </div>
+  <button (click)="upVote()" class="btn btn-primary">upvote</button>{{upvotes}}
+  <button (click)="downVote()" class="btn btn-primary">downvote</button>{{downvotes}}
 </div>

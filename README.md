@@ -1,9 +1,8 @@
 project Name
 ---------
 Quotes
-
 Author
-------
+----------------
 Michelle Claire
 
 project Description

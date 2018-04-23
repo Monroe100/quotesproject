@@ -8,8 +8,6 @@ import { Quote } from './quotes';
 })
 export class AppComponent {
   myArr: Quote[]
-  count: number = 0
-  count2: number = 0
 
   date: Date
 
@@ -18,12 +16,6 @@ export class AppComponent {
     console.log(this.myArr)
   }
 
-  upVote() {
-    this.count++
-  }
-  downVote() {
-    this.count2++
-  }
   constructor() {
     this.myArr = []
 

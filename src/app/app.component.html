@@ -1,9 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="welcome">
-<h1>WELCOME TO THE WORLD OF QUOTES</h1>
+<div class="jumbotron">
+<h1 class="text-center">WELCOME TO THE WORLD OF QUOTES</h1>
 </div>
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-6">
       <form (ngSubmit)='formSubmit(myForm)' #myForm='ngForm'>
@@ -25,7 +25,7 @@
     </div>
     <div class="col-md-6">
       <app-quotes-form [myArr]='myArr'></app-quotes-form>
-      
+
     </div>
   </div>
 

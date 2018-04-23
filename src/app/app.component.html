@@ -1,9 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="welcome">
 <h1>WELCOME TO THE WORLD OF QUOTES</h1>
+</div>
+
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-6">
       <form (ngSubmit)='formSubmit(myForm)' #myForm='ngForm'>
         <div class="form-group">
           <label for="author">Author</label>
@@ -22,11 +24,10 @@
       </form>
     </div>
     <div class="col-md-6">
-
+      <app-quotes-form [myArr]='myArr'></app-quotes-form>
+      
     </div>
   </div>
-  <button (click)="upVote()" class="btn btn-primary">upvote</button>{{upvotes}}
-  <button (click)="downVote()" class="btn btn-primary">downvote</button>{{downvotes}}
-</div>
-<app-quotes-form [myArr]='myArr'></app-quotes-form>
+
+
 </div>

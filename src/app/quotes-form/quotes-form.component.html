@@ -2,6 +2,9 @@
   <div class="row" *ngFor="let quote of myArr">
     <div class="col-md-12" style="border:2px solid blue;background-color:magenta">
       {{quote.name}}
+      <button (click)="upVote()" class="btn btn-primary">upvote</button> {{ count }}
+      <button (click)="downVote()" class="btn btn-primary">downvote</button>{{ count2 }}
+      <button (click)="delete()" class="btn btn-primary">Delete</button>
 
     </div>
   </div>

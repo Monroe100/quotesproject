@@ -15,11 +15,6 @@ export class Quote {
     this.downvotes = downvotes
     this.date = new Date()
   }
-  upVote() {
-    this.upvotes++
-  }
-  downVote() {
-    this.downvotes++
-  }
+
 
 }

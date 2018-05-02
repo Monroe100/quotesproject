@@ -6,24 +6,17 @@ import { Quote } from '../quotes'
   styleUrls: ['./quotes-form.component.css']
 })
 export class QuotesFormComponent implements OnInit {
-  @Input() myArr: Quote
-  count: number = 0
+  @Input() myArr
 
-  count2: number = 0
-
-  upVote() {
-
-    this.count++
-
+  upVote(id) {
+    this.myArr[id].upvote()
   }
-
-  downVote() {
-
-    this.count2++
-
+  downVote(id) {
+    this.myArr[id].downvote()
   }
-
-
+  delete(id) {
+    this.myArr.splice(this.myArr[id],1)
+  }
   constructor() {
     this.myArr = []
   }

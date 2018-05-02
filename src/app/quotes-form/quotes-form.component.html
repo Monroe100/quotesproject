@@ -1,10 +1,16 @@
 <div class="container-fluid">
-  <div class="row" *ngFor="let quote of myArr">
-    <div class="col-md-12" style="border:2px solid blue;background-color:magenta">
-      {{quote.name}}
-      <button (click)="upVote()" class="btn btn-primary">upvote</button> {{ count }}
-      <button (click)="downVote()" class="btn btn-primary">downvote</button>{{ count2 }}
-      <button (click)="delete()" class="btn btn-primary">Delete</button>
+  <div class="row" *ngFor="let quote of myArr; let i=index">
+    <div class="col-md-12" style="border:2px solid aqua;height:30vh">
+      <blockquote class="blockquote">
+        <h3>quote</h3>
+  <p appHighlight *ngIf="quote.upvotes && i==0; else newp"  class="mb-0">{{quote.quote}}.</p>
+  <ng-template #newp>{{quote.quote}}</ng-template>
+  <footer class="blockquote-footer">author <cite title="Source Title"> {{quote.author}}</cite></footer>
+</blockquote>
+    <p>posted on {{quote.date|date}}</p>
+      <button (click)="upVote(i)" class="btn btn-primary">upvote</button> {{ quote.upvotes }}
+      <button (click)="downVote(i)" class="btn btn-primary">downvote</button>{{ quote.downvotes }}
+      <button (click)="delete(i)" class="btn btn-primary">Delete</button>
 
     </div>
   </div>

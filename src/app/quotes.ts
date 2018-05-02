@@ -15,6 +15,17 @@ export class Quote {
     this.downvotes = downvotes
     this.date = new Date()
   }
+  upvote() {
+
+    this.upvotes++
+
+  }
+
+  downvote() {
+
+    this.downvotes++
+
+  }
 
 
 }

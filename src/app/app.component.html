@@ -1,8 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="jumbotron">
 <h1 class="text-center">WELCOME TO THE WORLD OF QUOTES</h1>
-</div>
 
+</div>
 <div class="container">
   <div class="row">
     <div class="col-6">
@@ -20,11 +20,11 @@
           <textarea class="form-control" name="quote" ngModel rows="8" cols="80"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-secondary">Add Quote</button>
+        <button class="btn btn-secondary">Add Quote</button>
       </form>
     </div>
     <div class="col-md-6">
-      <app-quotes-form [myArr]='myArr'></app-quotes-form>
+      <app-quotes-form [myArr]=' sortedArr()'></app-quotes-form>
 
     </div>
   </div>

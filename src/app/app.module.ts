@@ -5,12 +5,16 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
+import { TimePipe } from './time.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuotesFormComponent
+    QuotesFormComponent,
+    TimePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

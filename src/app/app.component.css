@@ -1,5 +1,64 @@
-.jumbotron{
-background-color: #019B8C;
-text font-family: inherit;
-shape-margin: inherit;
+@import url('https://fonts.googleapis.com/css?family=Acme|Indie+Flower|Lobster');
+.header{
+    background-image: url('../assets/back.jpg');
+    color: #fff;
+    background-size: cover;
+    height: 100vh;
 }
+label{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.text-center{
+    font-family: 'Indie Flower', cursive;
+}
+
+button{
+    font-family: 'Lobster', cursive;
+}
+textarea{
+    font-family: 'Acme', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
